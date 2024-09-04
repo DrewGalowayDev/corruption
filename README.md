@@ -1,3 +1,8 @@
+![1](https://github.com/user-attachments/assets/48e422de-fb25-4a25-a661-ac27cd6599b3)
+![5](https://github.com/user-attachments/assets/1b16feec-33e6-4434-a792-8679b561251d)
+![4](https://github.com/user-attachments/assets/ad8b682c-5acb-4cdc-b93b-b83d605e0d04)
+![3](https://github.com/user-attachments/assets/e81f4f27-d9b6-4e42-b6ee-0c83e2ff48e6)
+![2](https://github.com/user-attachments/assets/cc77edc6-99e1-4ddf-9deb-1b8bac047c57)
 **Anti-Corruption by codestars**
 Welcome to the Anti-Corruption Website project by CodeStars Group! This platform is dedicated to educating individuals about anti-corruption, providing resources, and promoting awareness to fight against corruption.
 
