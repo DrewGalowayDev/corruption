@@ -1,7 +1,7 @@
-Anti-Corruption by codestars
+**Anti-Corruption by codestars**
 Welcome to the Anti-Corruption Website project by CodeStars Group! This platform is dedicated to educating individuals about anti-corruption, providing resources, and promoting awareness to fight against corruption.
 
-Table of Contents
+**Table of Contents
 Introduction
 Features
 Installation
@@ -9,24 +9,24 @@ Usage
 Contributing
 License
 Contact
-Introduction
+Introduction**
 The Anti-Corruption Website is designed to help individuals understand and combat corruption through educational resources, interactive tools, and community engagement. Our goal is to provide a comprehensive platform that informs and empowers users to take action against corruption.
 
 
-Live Preview-
+**Live Preview-**
 You can view a live preview of the Anti-Corruption Website by clicking the link below:
 
 Live Preview
-Features
+**Features**
 Home Tab: A user-friendly interface that introduces the website and its mission.
 Educational Materials: A collection of resources and information on anti-corruption topics.
 Chatbot: An interactive chatbot to assist users with their queries and provide guidance.
 Corruption Case Report: A section for users to report and view cases of corruption.
 Awareness Tab: Tools and resources to help increase awareness and advocate against corruption.
-Installation
+**Installation**
 To set up the project on your local machine, follow these steps:
 
-Clone the repository:
+**Clone the repository:**
 
 bash
 Copy code
@@ -84,10 +84,10 @@ Submit a pull request on GitHub.
 
 Please ensure your contributions adhere to the project’s coding standards and include appropriate tests.
 
-License
+**License**
 This project is licensed under the MIT License.
 
-Contact
+**Contact**
 For questions or feedback, contact us at:
 
 Project Maintainers: CodeStars Group
