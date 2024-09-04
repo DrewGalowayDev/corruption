@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<!--
+	codestars by drewgallowaydev
+	blogboosters| @drewgallowaydev22
+-->
+<html>
+	<head>
+		<title>Codestars-Anticorruption</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">Anticoruption <em>by Codestars</em></a></h1>
+
+					<!-- Nav -->
+          <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Anti-Corruption</a>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Global Efforts</a></li>
+                        <li><a href="#">Key Initiatives</a></li>
+                        <li><a href="#">Resources</a>
+                            <ul>
+                                <li><a href="#">Reports</a></li>
+                                <li><a href="#">Guidelines</a></li>
+                                <li><a href="#">Case Studies</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </li>
+                <li class="current"><a href="chatbot.html">ChatBot</a></li>
+                <li><a href="Education.html">Educational Materials</a></li>
+                <li><a href="corruption.html">Corruption Cases</a></li>
+                <li><a href="awareness.html">Awareness</a></li>
+            </ul>
+        </nav>
+        
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-narrower">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+
+										<section>
+											
+											
+											
+										</section>
+
+										<section>
+											
+											
+											<footer>
+												<a href="#" class="button">More Random Links</a>
+											</footer>
+										</section>
+
+								</div>
+							</div>
+							<div class="col-8  col-12-narrower imp-narrower">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+										    <footer>
+												<a href="#" class="button">blog chatbot</a>
+											</footer>
+											<header>
+												<h2>Anticorruption Chatbot</h2>
+												<p>Get started with the codestars chatbot that strives to fight corruption.</p>
+											</header>
+
+											<span class="image featured">
+											    
+											    
+  <style>
+        /* General CSS Reset and Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .wrapper {
+            padding: 20px;
+        }
+
+        /* Chatbot Styles */
+        .chat-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            background: linear-gradient(to bottom right, #f6a5c0, #7b8cf6);
+            border-radius: 10px;
+            box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1), -20px -20px 60px rgba(255, 255, 255, 0.5);
+        }
+        .chat-header {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+        }
+        .chat-body {
+            padding: 15px;
+            height: 300px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .chat-message {
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .user-message {
+            background-color: #4CAF50;
+            color: white;
+            align-self: flex-end;
+        }
+        .bot-message {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #f0f0f0;
+        }
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+        .chat-input button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        /* Responsive Design for Different Devices */
+        @media (max-width: 768px) {
+            .chat-container {
+                width: 95%;
+                margin: 10px auto;
+            }
+            .chat-header {
+                font-size: 18px;
+                padding: 10px;
+            }
+            .chat-body {
+                height: 250px;
+                padding: 10px;
+            }
+            .chat-input input {
+                font-size: 14px;
+            }
+            .chat-input button {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>Anti-Corruption Chatbot</h2>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="chat-message bot-message">
+        Hello! I'm an anti-corruption chatbot. I'm here to educate you about the dangers of corruption and how you can fight against it.
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chat-input" placeholder="Type your message ">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript code
+    const chatBody = document.getElementById('chat-body');
+    const chatInput = document.getElementById('chat-input');
+
+    function sendMessage() {
+      const message = chatInput.value.trim();
+      if (message) {
+        const userMessage = document.createElement('div');
+        userMessage.textContent = message;
+        userMessage.classList.add('chat-message', 'user-message');
+        chatBody.appendChild(userMessage);
+
+        // Respond based on the user's message
+        if (message.toLowerCase().includes('corruption')) {
+          const botMessage = document.createElement('div');
+          botMessage.textContent = 'Corruption is a serious problem that undermines the fairness and integrity of our societies. Here are some ways you can fight against corruption:';
+          botMessage.classList.add('chat-message', 'bot-message');
+          chatBody.appendChild(botMessage);
+
+          const list = document.createElement('ul');
+          list.innerHTML = `
+            <li>Educate yourself and others about the impact of corruption</li>
+            <li>Report any instances of corruption you encounter</li>
+            <li>Support anti-corruption initiatives and organizations</li>
+            <li>Demand transparency and accountability from government and businesses</li>
+            <li>Promote ethical behavior and integrity in your own actions</li>
+          `;
+          chatBody.appendChild(list);
+        } else {
+          const botMessage = document.createElement('div');
+          botMessage.textContent = 'I\'m sorry, I don\'t understand. Please try asking me about corruption or ways to fight against it.';
+          botMessage.classList.add('chat-message', 'bot-message');
+          chatBody.appendChild(botMessage);
+        }
+
+        chatInput.value = '';
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+    }
+  </script>
+
+
+											    
+											    
+											</span>
+
+											
+
+											<h3>Anticorruption ChatBot</h3>
+							
+										
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Get More information about anticorruption</h3>
+								<ul class="links"><li><a href="https://www.unodc.org/unodc/en/corruption/index.html">✅UNODC Anti-Corruption</a></li>
+<li><a href="https://www.unodc.org/unodc/en/corruption/uncac.html">✅United Nations Convention Against Corruption (UNCAC)</a></li>
+									<li><a href="https://www.transparency.org">✅Transparency International</a></li>
+<li><a href="https://www.globalwitness.org">✅Global Witness</a></li>
+<li><a href="https://www.corruptionwatch.org.za">✅Corruption Watch</a></li>
+<li><a href="https://www.opensocietyfoundations.org">✅Open Society Foundations</a></li>
+<li><a href="https://www.u4.no">✅The Anti-Corruption Resource Centre (U4)</a></li>
+
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>More Links to Book resources on Anticorruption</h3>
+								<ul class="links">
+									<li><a href="https://www.amazon.com/Corruption-What-Everyone-Needs-Know/dp/0199995764">📕Corruption: What Everyone Needs to Know by Ray Fisman and Miriam A. Golden</a></li>
+<li><a href="https://www.amazon.com/Globalization-Corruption-Bob-Beswick/dp/1629741531">📗The Globalization of Corruption by Bob Beswick</a></li>
+<li><a href="https://www.amazon.com/Corruption-Control-Contending-Perspectives-International/dp/0367337945">📘Corruption and Corruption Control: Contending Perspectives edited by Michael Johnston</a></li>
+<li><a href="https://www.amazon.com/Anatomy-Fascism-Robert-O-Paxton/dp/0374531826">📙The Anatomy of Fascism by Robert O. Paxton</a></li>
+<li><a href="https://www.amazon.com/Why-Nations-Fail-Origins-Prosperity/dp/0307719219">📓Why Nations Fail: The Origins of Power, Prosperity, and Poverty by Daron Acemoglu and James A. Robinson</a></li>
+								</ul>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<h3>Get In Touch</h3>
+								<form>
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobilep">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-mobilep">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div>
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Anticorruption. All rights reserved</li><li>Design by: <a href="drewgallowaydev22">Codestars</a></li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

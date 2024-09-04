@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Anticorruption by Codestars</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Internal CSS for the feed and posts */
+        #feed {
+            padding: 1em;
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .post {
+            margin-bottom: 2em;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .actions {
+            margin-top: 1em;
+        }
+
+        .actions button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5em;
+            margin-right: 1em;
+        }
+
+        .actions .thumbs-up {
+            color: #28a745;
+        }
+
+        .actions .thumbs-down {
+            color: #dc3545;
+        }
+
+        .actions .thumbs-up.active, .actions .thumbs-down.active {
+            color: #0056b3;
+        }
+
+        .comment-section {
+            margin-top: 2em;
+        }
+
+        .comment-section h3 {
+            margin-top: 0;
+        }
+
+        .comment-section form {
+            margin-bottom: 1em;
+        }
+
+        .comment-section textarea {
+            width: 100%;
+            padding: 0.5em;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .comment-section button {
+            padding: 0.5em 1.5em;
+            border: none;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .comment-section button:hover {
+            background-color: #0056b3;
+        }
+
+        .comment {
+            border-top: 1px solid #ddd;
+            padding-top: 1em;
+            margin-top: 1em;
+        }
+
+        .comment p {
+            background-color: #f9f9f9;
+            padding: 0.5em;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+            <h1><a href="index.html" id="logo">Anticorruption<em>by Codestars</em></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Anti-Corruption</a>
+                        <ul>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Global Efforts</a></li>
+                            <li><a href="#">Key Initiatives</a></li>
+                            <li><a href="#">Resources</a>
+                                <ul>
+                                    <li><a href="#">Reports</a></li>
+                                    <li><a href="#">Guidelines</a></li>
+                                    <li><a href="#">Case Studies</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="chatbot.html">Chatbot</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li class="current"><a href="corruption.html">Corruption</a></li>
+                    <li><a href="awareness.html">Awareness</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+
+        <!-- Main Feed -->
+        <section id="feed">
+            <h2>Feed</h2>
+            <div class="post">
+                <h3>Corruption Incident</h3>
+                <p>𝗙𝗮𝗳𝗶 𝗠𝗽 𝗛𝗼𝗻. 𝗦𝗮𝗹𝗮𝗵 𝗬𝗮𝗸𝘂𝗯 𝗙𝗮𝗰𝗲𝘀 𝗔𝗹𝗹𝗲𝗴𝗮𝘁𝗶𝗼𝗻𝘀 𝗢𝘃𝗲𝗿 𝗚𝗵𝗼𝘀𝘁 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗖𝗹𝗮𝗶𝗺𝘀 :</p>
+                <img src="images/d.png" alt="Corruption Image">
+                <div class="actions">
+                    <button id="like-btn" class="thumbs-up">&#x1F44D;</button>
+                    <div id="like-count">0</div>
+                    <button id="unlike-btn" class="thumbs-down">&#x1F44E;</button>
+                    <span id="unlike-count">0</span>
+                </div>
+                <div class="comment-section">
+                    <h3>Comments</h3>
+                    <form id="comment-form">
+                        <textarea id="comment" name="comment" rows="3" placeholder="Add a comment..." required></textarea>
+                        <button type="submit">Post Comment</button>
+                    </form>
+                    <div id="comments-list">
+                        <!-- Existing comments will be displayed here -->
+                    </div>
+                </div>
+            </div>
+            <!-- Additional posts can be added here following the same structure -->
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <section class="col-3 col-6-narrower col-12-mobilep">
+                        <h3>Get More Information about Anticorruption</h3>
+                        <ul class="links">
+                            <li><a href="https://www.unodc.org/unodc/en/corruption/index.html">✅UNODC Anti-Corruption</a></li>
+                            <li><a href="https://www.unodc.org/unodc/en/corruption/uncac.html">✅United Nations Convention Against Corruption (UNCAC)</a></li>
+                            <li><a href="https://www.transparency.org">✅Transparency International</a></li>
+                            <li><a href="https://www.globalwitness.org">✅Global Witness</a></li>
+                            <li><a href="https://www.corruptionwatch.org.za">✅Corruption Watch</a></li>
+                            <li><a href="https://www.opensocietyfoundations.org">✅Open Society Foundations</a></li>
+                            <li><a href="https://www.u4.no">✅The Anti-Corruption Resource Centre (U4)</a></li>
+                        </ul>
+                    </section>
+                    <section class="col-3 col-6-narrower col-12-mobilep">
+                        <h3>More Links to Book Resources on Anticorruption</h3>
+                        <ul class="links">
+                            <li><a href="https://www.amazon.com/Corruption-What-Everyone-Needs-Know/dp/0199995764">📕Corruption: What Everyone Needs to Know by Ray Fisman and Miriam A. Golden</a></li>
+                            <li><a href="https://www.amazon.com/Globalization-Corruption-Bob-Beswick/dp/1629741531">📗The Globalization of Corruption by Bob Beswick</a></li>
+                            <li><a href="https://www.amazon.com/Corruption-Control-Contending-Perspectives-International/dp/0367337945">📘Corruption and Corruption Control: Contending Perspectives edited by Michael Johnston</a></li>
+                            <li><a href="https://www.amazon.com/Anatomy-Fascism-Robert-O-Paxton/dp/0374531826">📙The Anatomy of Fascism by Robert O. Paxton</a></li>
+                            <li><a href="https://www.amazon.com/Why-Nations-Fail-Origins-Prosperity/dp/0307719219">📓Why Nations Fail: The Origins of Power, Prosperity, and Poverty by Daron Acemoglu and James A. Robinson</a></li>
+                        </ul>
+                    </section>
+                    <section class="col-6 col-12-narrower">
+                        <h3>Get In Touch</h3>
+                        <form>
+                            <div class="row gtr-50">
+                                <div class="col-6 col-12-mobilep">
+                                    <input type="text" name="name" id="name" placeholder="Name" />
+                                </div>
+                                <div class="col-6 col-12-mobilep">
+                                    <input type="email" name="email" id="email" placeholder="Email" />
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="actions">
+                                        <li><input type="submit" class="button alt" value="Send Message" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Icons -->
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+            </ul>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <ul class="menu">
+                    <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="drewgallowaydev">Code Stars</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const likeBtn = document.getElementById('like-btn');
+            const unlikeBtn = document.getElementById('unlike-btn');
+            const likeCount = document.getElementById('like-count');
+            const unlikeCount = document.getElementById('unlike-count');
+            const commentForm = document.getElementById('comment-form');
+            const commentsList = document.getElementById('comments-list');
+
+            let likes = 0;
+            let unlikes = 0;
+
+            likeBtn.addEventListener('click', function() {
+                likeBtn.classList.add('active');
+                unlikeBtn.classList.remove('active');
+                likes++;
+                likeCount.textContent = likes;
+            });
+            
+            unlikeBtn.addEventListener('click', function() {
+                unlikeBtn.classList.add('active');
+                likeBtn.classList.remove('active');
+                unlikes++;
+                unlikeCount.textContent = unlikes;
+            });
+
+            commentForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const commentText = document.getElementById('comment').value;
+                if (commentText.trim()) {
+                    const commentDiv = document.createElement('div');
+                    commentDiv.className = 'comment';
+                    commentDiv.innerHTML = `<p>${commentText}</p>`;
+                    commentsList.appendChild(commentDiv);
+                    commentForm.reset();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
